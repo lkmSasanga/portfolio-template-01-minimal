@@ -38,7 +38,7 @@ REPO STRUCTURE (create these files)
 /
   index.html
   assets/
-    profile.jpg (use placeholder name only; don't generate image)
+    profile.png (use placeholder name only; don't generate image)
   css/
     styles.css
   js/
@@ -87,7 +87,7 @@ CONTENT STYLE
 DELIVERABLE
 Output the full contents of every file listed above.
 Ensure all links are placeholders but realistic (GitHub, LinkedIn).
-Make sure it looks good without any assets (profile.jpg optional).
+Make sure it looks good without any assets (profile.png optional).
 
 EXTRA
 - Add a small "Deploy" section in README: GitHub Pages steps.
@@ -171,7 +171,7 @@ Open `css/styles.css` and find the `:root` section at the top. Modify the CSS va
 
 ### Step 8: Add Your Profile Picture (Optional)
 
-1. Add your profile image to `assets/profile.jpg`
+1. Add your profile image to `assets/profile.png`
 2. The image should be square (recommended: 300x300px or larger)
 3. If no image is provided, it will be hidden automatically
 
@@ -212,7 +212,7 @@ Minimal/
 ├── js/
 │   └── main.js         # JavaScript functionality
 ├── assets/
-│   └── profile.jpg     # Your profile picture (optional)
+│   └── profile.png     # Your profile picture (optional)
 ├── README.md           # This file
 ├── LICENSE             # MIT License
 └── .gitignore          # Git ignore file
