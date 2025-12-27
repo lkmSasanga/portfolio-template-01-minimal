@@ -193,3 +193,4 @@ More templates are on the way! Stay tuned for:
 
 *This is the main repository for minimal portfolio templates. All templates are free to use, customize, and deploy.*
 
+
