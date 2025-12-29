@@ -286,5 +286,191 @@ If you encounter any issues or have questions:
 
 ---
 
+## 🔧 Original Generation Prompt
+
+This template was generated using the following Cursor prompt:
+
+```text
+You are an expert front-end developer and UI designer. Generate a complete, production-ready, beginner-friendly portfolio template repo.
+
+GOAL
+Build "Timeline Resume Portfolio" — a beautiful, modern, and animated portfolio template featuring a stunning CSS-only timeline layout.
+
+Hook:
+- CSS-only timeline animation that draws from top to bottom on page load
+- Smooth, impressive animations without JavaScript dependencies
+
+Wow features:
+- CSS-only timeline animation with staggered item appearances
+- Timeline layout for experience and education
+- Easy customization through single CONFIG object
+
+TECH + CONSTRAINTS
+- Use ONLY vanilla HTML, CSS, and JavaScript
+- No frameworks, no build tools, no external libraries
+- Simple, readable code for beginners
+- Fully responsive (mobile, tablet, desktop)
+- Accessible: semantic HTML, keyboard navigation, focus states
+- Performance-focused: lightweight, CSS-only animations
+- Use system font stack only
+
+REPO STRUCTURE
+/
+  index.html
+  css/
+    styles.css
+  js/
+    main.js
+  assets/
+    profile.png (circular profile image)
+    hero.jpg (hero background image)
+  README.md
+  LICENSE (MIT)
+  .gitignore
+  COLOR_GUIDE.md
+
+DESIGN REQUIREMENTS
+- Clean, modern, recruiter-friendly interface
+- CSS-only timeline with vertical line animation
+- Max width ~ 1100px centered
+- Sections:
+  1) Sticky header with navigation
+  2) Hero section (with profile image and background image)
+  3) Skills section (grouped by category with tags)
+  4) Timeline section (experience and education items)
+  5) Projects section (project cards with links)
+  6) Contact section (email and social links)
+  7) Footer
+
+TIMELINE FEATURE (MAIN FEATURE)
+- Vertical timeline layout with:
+  - Animated vertical line that draws on page load
+  - Timeline items (experience/education) on alternating sides
+  - Staggered fade-in and slide animations for items
+  - Responsive: single column on mobile
+- Timeline items include:
+  - Type (experience/education)
+  - Title and organization
+  - Date and location
+  - Description (bullet points)
+  - Tags (technology stack)
+
+TIMELINE ANIMATION
+- CSS-only implementation:
+  - Vertical line animates from top to bottom using CSS animations
+  - Timeline items fade in with staggered delays
+  - Smooth slide-in effects
+  - Respects prefers-reduced-motion for accessibility
+- No JavaScript required for animations
+
+REUSABILITY (VERY IMPORTANT)
+Make customization extremely easy:
+
+- Add a big "EDIT HERE" comment block in index.html
+- In js/main.js define a CONFIG object:
+
+{
+  name: "Your Name",
+  role: "Your Role",
+  location: "Your Location",
+  email: "your.email@example.com",
+  summary: "Your professional summary...",
+  profileImage: "assets/profile.png",
+  heroImage: "assets/hero.jpg",
+  social: [
+    { name: "GitHub", url: "...", icon: "..." },
+    { name: "LinkedIn", url: "...", icon: "..." }
+  ],
+  skills: {
+    "Top Skills": ["JavaScript", "React", "Node.js"],
+    "Frontend": ["React", "Vue.js", "CSS3"],
+    "Backend": ["Node.js", "Python", "PostgreSQL"]
+  },
+  timeline: [
+    {
+      type: "experience",
+      title: "Job Title",
+      organization: "Company Name",
+      date: "2022 - Present",
+      location: "City, State",
+      description: ["Achievement 1", "Achievement 2"],
+      tags: ["React", "TypeScript"]
+    }
+  ],
+  projects: [
+    {
+      title: "Project Name",
+      description: "Project description...",
+      tech: ["React", "Node.js"],
+      links: [
+        { label: "Live Demo", url: "https://..." },
+        { label: "GitHub", url: "https://..." }
+      ]
+    }
+  ]
+}
+
+- Render all content from this CONFIG object
+- Users should only edit this config to update content
+
+RESPONSIVE BEHAVIOR
+- Timeline:
+  - Alternating sides on desktop (left/right)
+  - Single column on mobile/tablet
+  - Smooth transitions between breakpoints
+- Navigation: hamburger menu on mobile
+- All sections stack vertically on mobile
+
+STYLING
+- Use CSS variables for colors, spacing, radius
+- Light theme by default
+- Subtle transitions only
+- CSS-only animations (no JavaScript for animations)
+
+NAV + UX
+- Sticky navigation bar
+- Smooth scroll navigation
+- Active link highlight on scroll (IntersectionObserver)
+- Mobile-friendly hamburger menu
+- Skip to main content link for accessibility
+
+COLOR CUSTOMIZATION
+- Create COLOR_GUIDE.md with:
+  - Instructions to change primary color in one line
+  - Color examples and combinations
+  - Tips for choosing colors
+
+README.md REQUIREMENTS
+Include:
+- Overview + screenshot placeholder
+- Quick start (open index.html)
+- Customization guide:
+  - Edit CONFIG object
+  - Change CSS variables
+  - Add images
+- How timeline animation works
+- Deploy guide (GitHub Pages)
+- MIT license note
+- Original generation prompt section
+
+DELIVERABLE
+Output full contents of:
+- index.html
+- css/styles.css
+- js/main.js
+- README.md
+- LICENSE
+- .gitignore
+- COLOR_GUIDE.md
+
+EXTRA
+- Keep UI premium but code simple
+- No unnecessary complexity
+- Everything in a single page
+- CSS-only animations for performance
+```
+
+---
+
 **Made with ❤️ for developers who want a beautiful portfolio without the complexity.**
 
